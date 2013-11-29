@@ -93,7 +93,7 @@ function exec(command) {
 
 // executes a commmand in the shell
 function exec_verbose(command) {
-    //Log("Command: " + command);
+    Log("Command: " + command);
     var oShell=wscript_shell.Exec(command);
     while (oShell.Status === 0) {
         //Wait a little bit so we're not super looping
